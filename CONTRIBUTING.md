@@ -32,3 +32,4 @@ python .\scripts\check_repo.py
 - 在标题里说明受影响的 skill 名称。
 - 如果改动影响使用方式，请同步更新 `README.md` 或对应 skill 的 `SKILL.md`。
 - 如果新增脚本，请尽量保持无状态、可重复执行，并避免写死本机路径或明文凭据。
+- 安装与 README 示例若发生变化，请同步更新对应命令示例。

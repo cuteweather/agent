@@ -30,10 +30,18 @@ Install all skills into the default Codex skills directory:
 python .\scripts\install_skills.py
 ```
 
+The installer uses `$CODEX_HOME/skills` when `CODEX_HOME` is set, otherwise it falls back to `~/.codex/skills`.
+
 Install selected skills only:
 
 ```powershell
 python .\scripts\install_skills.py image-search image-generate
+```
+
+List all available skills:
+
+```powershell
+python .\scripts\install_skills.py --list
 ```
 
 Install to a custom target:
@@ -124,6 +132,7 @@ This repository includes:
 - pull request template
 - contributing guide
 - security guide
+- code of conduct
 
 ## License
 
