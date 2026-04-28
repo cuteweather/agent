@@ -1,6 +1,6 @@
 # Agent Skills Repository
 
-[![Repo Check](https://img.shields.io/badge/repo-check-configured-brightgreen)](#)
+[![Repo Check](https://github.com/cuteweather/agent/actions/workflows/repo-check.yml/badge.svg)](https://github.com/cuteweather/agent/actions/workflows/repo-check.yml)
 
 这个目录现在被整理成一个可分发的 skills 集合仓库，包含 16 个独立 skill。每个 skill 保持自己的目录边界，根目录补充了仓库说明、机器可读索引和批量安装脚本，方便直接 clone、审阅和安装。
 
