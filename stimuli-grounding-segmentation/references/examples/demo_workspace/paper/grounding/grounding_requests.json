@@ -1,0 +1,68 @@
+{
+  "families": [
+    {
+      "grounding_id": "gabor_patch_primary",
+      "stimulus_family": "gabor_patch",
+      "source_path": "../_page_1_Figure_2.jpeg",
+      "figure_locator": "Figure 1a, page 1, left panel – single item in Sample phase",
+      "experiment_ids": ["exp1"],
+      "phase_ids": ["sample_presentation", "test_probe"],
+      "condition_scope": ["all_orientations", "all_spatial_frequencies"],
+      "description": "Single Gabor patch stimulus exemplar: a circular patch with sinusoidal luminance grating modulated by a 2-D Gaussian envelope, presented against a uniform mid-grey background.",
+      "must_preserve": [
+        "segment exactly one isolated Gabor patch",
+        "circular shape with soft Gaussian-blurred edge",
+        "sinusoidal grating pattern visible inside the patch",
+        "do not include fixation cross or surrounding background elements"
+      ],
+      "allowed_variation": [
+        "orientation of grating varies by condition (0–179°)",
+        "spatial frequency may differ across experiments",
+        "absolute pixel size may be rescaled for different displays"
+      ],
+      "reference_role": "primary_example",
+      "non_exhaustive": false
+    },
+    {
+      "grounding_id": "gabor_array_layout",
+      "stimulus_family": "gabor_patch",
+      "source_path": "../_page_1_Figure_2.jpeg",
+      "figure_locator": "Figure 1b, page 1 – array of items in display layout",
+      "experiment_ids": ["exp2"],
+      "phase_ids": ["sample_presentation"],
+      "condition_scope": ["set_size_4", "set_size_8"],
+      "description": "Spatial layout of multiple Gabor patches arranged around a central fixation point; each item has a different orientation, illustrating a multi-item working memory display.",
+      "must_preserve": [
+        "segment the group of Gabor patches as a whole layout",
+        "preserve relative spatial positions of items around fixation",
+        "do not segment individual items separately in this record",
+        "do not include data charts, line plots, bar graphs, or axis labels"
+      ],
+      "allowed_variation": [
+        "number of items varies by set-size condition",
+        "individual orientations are randomised per trial"
+      ],
+      "reference_role": "layout_reference",
+      "non_exhaustive": true
+    },
+    {
+      "grounding_id": "teardrop_stimulus",
+      "stimulus_family": "teardrop_bar",
+      "source_path": null,
+      "figure_locator": null,
+      "experiment_ids": ["exp3"],
+      "phase_ids": ["sample_presentation"],
+      "condition_scope": ["16_orientations"],
+      "description": "Black teardrop-shaped stimulus with a rounded bulbous end and a pointed tip end.",
+      "must_preserve": [
+        "teardrop silhouette geometry",
+        "solid black fill"
+      ],
+      "allowed_variation": [
+        "orientation varies across 16 levels"
+      ],
+      "reference_role": "primary_example",
+      "non_exhaustive": false
+    }
+  ]
+}

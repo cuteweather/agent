@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a new skill or an improvement to an existing one.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What workflow or gap are you trying to solve?
+    validations:
+      required: true
+  - type: input
+    id: skill
+    attributes:
+      label: Related skill
+      placeholder: stimuli-exp-design
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true

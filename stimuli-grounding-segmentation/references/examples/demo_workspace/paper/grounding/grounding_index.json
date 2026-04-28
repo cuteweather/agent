@@ -1,0 +1,160 @@
+[
+  {
+    "grounding_id": "gabor_patch_primary",
+    "stimulus_family": "gabor_patch",
+    "source_path": "../_page_1_Figure_2.jpeg",
+    "figure_locator": "Figure 1a, page 1, left panel – single item in Sample phase",
+    "experiment_ids": [
+      "exp1"
+    ],
+    "phase_ids": [
+      "sample_presentation",
+      "test_probe"
+    ],
+    "condition_scope": [
+      "all_orientations",
+      "all_spatial_frequencies"
+    ],
+    "prompt_text": "Single Gabor patch stimulus exemplar: a circular patch with sinusoidal luminance grating modulated by a 2-D Gaussian envelope, presented against a uniform mid-grey background. Must preserve: segment exactly one isolated Gabor patch; circular shape with soft Gaussian-blurred edge; sinusoidal grating pattern visible insi",
+    "description": "Single Gabor patch stimulus exemplar: a circular patch with sinusoidal luminance grating modulated by a 2-D Gaussian envelope, presented against a uniform mid-grey background.",
+    "must_preserve": [
+      "segment exactly one isolated Gabor patch",
+      "circular shape with soft Gaussian-blurred edge",
+      "sinusoidal grating pattern visible inside the patch",
+      "do not include fixation cross or surrounding background elements"
+    ],
+    "allowed_variation": [
+      "orientation of grating varies by condition (0–179°)",
+      "spatial frequency may differ across experiments",
+      "absolute pixel size may be rescaled for different displays"
+    ],
+    "reference_priority": "figure_then_text",
+    "effective_reference_basis": "figure_and_text",
+    "reference_role": "primary_example",
+    "non_exhaustive": false,
+    "match_status": "no_match",
+    "mask_paths": [],
+    "example_paths": [],
+    "overlay_paths": [],
+    "searched_regions": [],
+    "no_match_reason": "no_mask_above_threshold"
+  },
+  {
+    "grounding_id": "gabor_array_layout",
+    "stimulus_family": "gabor_patch",
+    "source_path": "../_page_1_Figure_2.jpeg",
+    "figure_locator": "Figure 1b, page 1 – array of items in display layout",
+    "experiment_ids": [
+      "exp2"
+    ],
+    "phase_ids": [
+      "sample_presentation"
+    ],
+    "condition_scope": [
+      "set_size_4",
+      "set_size_8"
+    ],
+    "prompt_text": "Spatial layout of multiple Gabor patches arranged around a central fixation point; each item has a different orientation, illustrating a multi-item working memory display. Must preserve: segment the group of Gabor patches as a whole layout; preserve relative spatial positions of items around fixation; do not segment in",
+    "description": "Spatial layout of multiple Gabor patches arranged around a central fixation point; each item has a different orientation, illustrating a multi-item working memory display.",
+    "must_preserve": [
+      "segment the group of Gabor patches as a whole layout",
+      "preserve relative spatial positions of items around fixation",
+      "do not segment individual items separately in this record",
+      "do not include data charts, line plots, bar graphs, or axis labels"
+    ],
+    "allowed_variation": [
+      "number of items varies by set-size condition",
+      "individual orientations are randomised per trial"
+    ],
+    "reference_priority": "figure_then_text",
+    "effective_reference_basis": "crop_and_text",
+    "reference_role": "layout_reference",
+    "non_exhaustive": true,
+    "match_status": "matched",
+    "mask_paths": [
+      "paper/grounding/masks/gabor_array_layout__01.png",
+      "paper/grounding/masks/gabor_array_layout__02.png",
+      "paper/grounding/masks/gabor_array_layout__03.png"
+    ],
+    "example_paths": [
+      "paper/grounding/examples/gabor_array_layout__01.png",
+      "paper/grounding/examples/gabor_array_layout__02.png",
+      "paper/grounding/examples/gabor_array_layout__03.png"
+    ],
+    "overlay_paths": [
+      "paper/grounding/overlays/gabor_array_layout__01.png",
+      "paper/grounding/overlays/gabor_array_layout__02.png",
+      "paper/grounding/overlays/gabor_array_layout__03.png"
+    ],
+    "searched_regions": [
+      {
+        "kind": "predicted_box",
+        "box_xyxy": [
+          82.89317321777344,
+          229.072998046875,
+          548.2410888671875,
+          346.484619140625
+        ],
+        "score": 0.2294921875,
+        "mask_area": 47541
+      },
+      {
+        "kind": "predicted_box",
+        "box_xyxy": [
+          83.95708465576172,
+          63.086647033691406,
+          547.03173828125,
+          180.45867919921875
+        ],
+        "score": 0.2255859375,
+        "mask_area": 47932
+      },
+      {
+        "kind": "predicted_box",
+        "box_xyxy": [
+          82.18785095214844,
+          62.68611526489258,
+          550.9293823242188,
+          346.6077880859375
+        ],
+        "score": 0.2138671875,
+        "mask_area": 93979
+      }
+    ],
+    "no_match_reason": null
+  },
+  {
+    "grounding_id": "teardrop_stimulus",
+    "stimulus_family": "teardrop_bar",
+    "source_path": null,
+    "figure_locator": null,
+    "experiment_ids": [
+      "exp3"
+    ],
+    "phase_ids": [
+      "sample_presentation"
+    ],
+    "condition_scope": [
+      "16_orientations"
+    ],
+    "prompt_text": "Black teardrop-shaped stimulus with a rounded bulbous end and a pointed tip end. Must preserve: teardrop silhouette geometry; solid black fill.",
+    "description": "Black teardrop-shaped stimulus with a rounded bulbous end and a pointed tip end.",
+    "must_preserve": [
+      "teardrop silhouette geometry",
+      "solid black fill"
+    ],
+    "allowed_variation": [
+      "orientation varies across 16 levels"
+    ],
+    "reference_priority": "text_only",
+    "effective_reference_basis": "text_only",
+    "reference_role": "primary_example",
+    "non_exhaustive": false,
+    "match_status": "no_match",
+    "mask_paths": [],
+    "example_paths": [],
+    "overlay_paths": [],
+    "searched_regions": [],
+    "no_match_reason": "missing_source_image"
+  }
+]

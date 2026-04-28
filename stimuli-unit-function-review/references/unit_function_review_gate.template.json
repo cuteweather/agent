@@ -1,0 +1,76 @@
+{
+  "review_status": "pending_manual_review",
+  "human_review_completed": false,
+  "passed": false,
+  "fallback_needed": true,
+  "summary": "",
+  "findings": [],
+  "checks": {
+    "executed": true,
+    "unit_spec_extraction": {
+      "executed": true,
+      "passed": false,
+      "issues": []
+    },
+    "textual_alignment": {
+      "executed": true,
+      "passed": false,
+      "facts_total": 0,
+      "facts_passed": 0,
+      "issues": []
+    },
+    "unit_catalog_audit": {
+      "executed": true,
+      "passed": false,
+      "issues": []
+    },
+    "primitive_fidelity_review": {
+      "executed": true,
+      "passed": false,
+      "issues": []
+    },
+    "scene_semantic_review": {
+      "executed": true,
+      "passed": false,
+      "issues": []
+    }
+  },
+  "primitive_units": {
+    "ready": false,
+    "families": [],
+    "missing": [],
+    "sample_count": 0,
+    "samples_verified": []
+  },
+  "scene_units": {
+    "ready": false,
+    "families": [],
+    "missing": [],
+    "sample_count": 0,
+    "samples_verified": []
+  },
+  "output_unit": {
+    "path": "output_unit",
+    "ready": false,
+    "structure_ok": false,
+    "image_count": 0,
+    "primitive_image_count": 0,
+    "scene_image_count": 0,
+    "no_trial_phase_samples": false
+  },
+  "vlm_review": {
+    "executed": false,
+    "sampled_images": [],
+    "issues": [],
+    "counts": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0
+    },
+    "has_failures": false,
+    "per_image_results": {}
+  },
+  "critical_mismatches": [],
+  "critical_mismatches_empty": true,
+  "next_actions": []
+}

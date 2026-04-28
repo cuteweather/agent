@@ -1,0 +1,133 @@
+{
+  "count": 16,
+  "skills": [
+    {
+      "folder": "data-preview",
+      "name": "data-preview",
+      "description": "当需要查看/预览各种数据尤其是非纯文本数据(pdf等)时使用此技能，可将任何非md格式转换为md格式。例如：txt,xlsx,docx,pptx,pdf,mat,zip,rar。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "function-shell-executor",
+      "name": "function-shell-executor",
+      "description": "通用函数壳执行器。根据输入的函数壳(name+description)自主规划与执行任务，每个任务你都需要优先查找是否存在可用的skills/tools，若存在则调用，并输出机器可读结果文件。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "image-generate",
+      "name": "image-generate",
+      "description": "根据提示词进行文生图并保存到本地，支持比例、尺寸、数量、seed、prompt 优化和风格参数。当用户提到“文生图/生成图片/image-01/image-01-live”时使用。",
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "image-search",
+      "name": "image-search",
+      "description": "按类别检索并下载真实图片素材（如风景图、城市图、人物图）。当需要使用真实图片素材时，使用此技能。",
+      "has_scripts": true,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-action-executor",
+      "name": "stimuli-action-executor",
+      "description": "agent action 的统一执行包装器。负责执行单个 action、按需调用目标领域 skill，并强制返回结构化 JSON 结果。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-code-generation",
+      "name": "stimuli-code-generation",
+      "description": "生成 scene composition、trial 调度与完整实验流程代码。此技能在 run_unit_codegen + run_unit_review 通过后，利用已审查通过的 primitive 函数（stimuli_primitives.py）组织成满足条件的刺激场景图片，并生成完整的 PsychoPy 复现代码。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-code-review",
+      "name": "stimuli-code-review",
+      "description": "run_review 的两阶段人工审核门禁。第一次生成 gate 并暂停，人工填写后再 finalize 生成 code_review.md。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-dataset-evaluation",
+      "name": "stimuli-dataset-evaluation",
+      "description": "心理学刺激数据集的量化测评与微调价值分析。利用 `multimodal-looker` 子 agent 对比图像与 exp_design.md 的参数一致性，并产出 dataset_evaluation_report.md。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-exp-design",
+      "name": "stimuli-exp-design",
+      "description": "从心理学论文原文、论文中的刺激插图(<workspace>/paper/...)、实验数据与参考代码(<workspace>/data/...)中，抽取复现实验所需的全部实现信息，生成严格可追溯、可核验引用的 exp_design.md；输出必须以 stimkit 为唯一刺激实现框架来表述参数、坐标、形状与渲染逻辑，并将 trial 流程、phase 级刺激规格、grounding stimulus families / reference basis、随机化/反平衡规则、数据字段↔实现参数映射统一纳入 Per-Experiment Specification。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-exp-design-review",
+      "name": "stimuli-exp-design-review",
+      "description": "在 run_exp_design 与 run_codegen 之间执行阻断式 exp_design 审核，输出机器可读 gate 与人类可读报告，确保设计规格可执行、可追溯、可审计。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-grounding-segmentation",
+      "name": "stimuli-grounding-segmentation",
+      "description": "基于刺激描述，对论文参考图执行grounding & segmentation。 产出 grounding_index.json、mask、overlay 与 example crop；当分割失败时保留 no_match 记录并自动回退到 figure_and_text 或 text_only。",
+      "has_scripts": true,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-meta-orchestrator",
+      "name": "stimuli-meta-orchestrator",
+      "description": "顶层论文处理 meta agent。只基于统一 manifest 选择下一条显式 action 与最终状态；不直接执行业务动作。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-reproducibility-check",
+      "name": "stimuli-reproducibility-check",
+      "description": "验证一个心理学论文的实验中使用的刺激是否可复现。在开始处理一个心理学论文原始刺激的代码复现工作时，使用这个技能来检验论文是否满足复现要求。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-result-report",
+      "name": "stimuli-result-report",
+      "description": "基于统一 manifest 与当前工作区状态刷新 result_report.md，记录执行动作、证据、剩余风险与当前结论。",
+      "has_scripts": false,
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-unit-code-generation",
+      "name": "stimuli-unit-code-generation",
+      "description": "生成单体刺激物（primitive）的 PsychoPy 绘制函数与 unit catalog。此技能从 exp_design.md 提取所有可能出现的刺激物形状定义，为每种刺激物类型生成独立的 PsychoPy 绘制函数（含背景图片处理），并渲染 primitive catalog 供后续 unit review 审查。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "folder": "stimuli-unit-function-review",
+      "name": "stimuli-unit-function-review",
+      "description": "run_unit_review 的两阶段人工审核门禁。第一次生成 gate 并暂停，人工填写后再 finalize 生成 unit_function_review.md。",
+      "has_scripts": false,
+      "has_references": true,
+      "has_assets": false
+    }
+  ]
+}

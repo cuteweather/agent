@@ -1,0 +1,46 @@
+{
+  "review_status": "pending_manual_review",
+  "human_review_completed": false,
+  "passed": false,
+  "fallback_needed": true,
+  "summary": "",
+  "findings": [],
+  "sample_render": {
+    "executed": false,
+    "command": "",
+    "output_dir": "output",
+    "image_count": 0,
+    "interaction_required": false
+  },
+  "vlm_review": {
+    "executed": false,
+    "sampled_images": [],
+    "issues": [],
+    "counts": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0
+    },
+    "has_failures": false
+  },
+  "exp_design_checks": {
+    "executed": false,
+    "facts_total": 0,
+    "facts_passed": 0,
+    "phase_semantics_passed": false,
+    "issues": []
+  },
+  "scene_inventory_checks": {
+    "executed": false,
+    "phases_checked": [],
+    "issues": []
+  },
+  "condition_logic_checks": {
+    "executed": false,
+    "scheduler_checked": false,
+    "condition_generator_checked": false,
+    "issues": []
+  },
+  "critical_mismatches": [],
+  "next_actions": []
+}
