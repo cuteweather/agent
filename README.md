@@ -136,4 +136,4 @@ This repository includes:
 
 ## License
 
-License has not been chosen yet. Add a `LICENSE` file before broader public reuse if you want to define explicit reuse terms.
+This repository is licensed under the MIT License. See [`LICENSE`](./LICENSE).
